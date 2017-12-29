@@ -6,25 +6,7 @@ import java.util.regex.*;
 
 public class algorythma2 {
 
-    static class Node {
 
-        public int getBlockNo() {
-            return blockNo;
-        }
-
-        public void setBlockNo(int blockNo) {
-            this.blockNo = blockNo;
-        }
-
-        public Node(int blockNo) {
-
-            this.blockNo = blockNo;
-        }
-
-        int blockNo;
-        Queue<Node> queue = new LinkedList<Node>();
-
-    }
 
     public static void main(String args[]) throws Exception {
         Scanner sc = new Scanner(System.in);
@@ -41,7 +23,7 @@ public class algorythma2 {
         for (int t = 0; t < d; t++) {
             Node a = map.get(sc.nextInt());
             Node b = map.get(sc.nextInt());
-            a.queue.add(b);
+            a.getQueue().add(b);
 
         }
         for (int t = 1; t <= n; t++) {
@@ -51,9 +33,9 @@ public class algorythma2 {
             boolean yes = true;
             while (!queue.isEmpty()) {
             Node curr= queue.poll();
-            if(curr.blockNo==0) {yes=false;continue;}
+            if(curr.getBlockNo()==0) {yes=false;continue;}
             else{
-                for(Node next:curr.queue){
+                for(Node next:curr.getQueue()){
                     queue.add(next);
                 }
             }

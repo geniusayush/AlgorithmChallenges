@@ -1,4 +1,6 @@
-public class nykaa {
+
+public class nykaa {}
+ /*
     Hi Ayush
     hi
 
@@ -48,3 +50,4 @@ public class nykaa {
         }
 
     }
+*/
