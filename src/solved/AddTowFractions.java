@@ -1,7 +1,10 @@
+package solved;
+
 import java.io.IOException;
 import java.util.Scanner;
-
-public class SDF {
+/***
+this class is aboutt computing  a  addition of two fractions
+ */public class AddTowFractions {
     public static String[] fractionSum(String arr[]) {
         String res[] = new String[arr.length];
 

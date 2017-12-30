@@ -1,3 +1,5 @@
+package solved;
+
 import java.util.HashMap;
 
 public class DEgreeOfArray {
@@ -65,57 +67,11 @@ public class DEgreeOfArray {
 
     public static void main(String[] args) {
         int[] arr = {5, 1, 2, 2, 3, 1};
-        //  degreeOfArray(arr);
-        System.out.println(findLongestChain(3, 8));
-    }
-
-    static int countConsecutive(int N) {
-        // constraint on values of L gives us the
-        // time Complexity as O(N^0.5)
-        int count = 0;
-        for (int L = 1; L * (L + 1) < 2 * N; L++) {
-            float a = (float) ((1.0 * N - (L * (L + 1)) / 2) / (L + 1));
-            if (a - (int) a == 0.0)
-                count++;
-        }
-        return count;
-    }
-
-    /*
-     * Complete the function below.
-     */
-    static int findLongestChain(int min, int max) {
-        int matrix[] = new int[max];
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-
-
-        for (int i = min; i <= max; i++) {
-            matrix[i] = bilgi(i, map);
-        }
-        int high = 0;
-        int num=0;
-        for (int i = min; i < max; i++) {
-            if(matrix[i] > high)
-            { high = matrix[i];
-                num=i;
-            }
-
-        }
-        return num;
+          degreeOfArray(arr);
 
     }
 
-    static int bilgi(int n, HashMap<Integer, Integer> map) {
-        if (map.containsKey(n)) return map.get(n);
 
-        int result = n;
-        int sol = 0;
-        if (result <= 1) sol = 1;
-        else if (result % 2 == 0) sol = 1 + bilgi(result / 2, map);
-        else sol = 1 + bilgi(3 * result + 1, map);
-        map.put(n, sol);
-        return sol;
-    }
 
 
 }

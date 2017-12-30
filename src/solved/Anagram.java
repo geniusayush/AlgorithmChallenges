@@ -1,6 +1,8 @@
+package solved;
+
 import java.util.Scanner;
 
-public class Code {
+public class Anagram {
     public static void main(String args[]) throws Exception {
         Scanner scan = new Scanner(System.in);
         int testcases = scan.nextInt();

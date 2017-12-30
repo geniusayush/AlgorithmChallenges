@@ -1,8 +1,6 @@
-import java.io.*;
+import solved.Node;
+
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class algorythma2 {
 

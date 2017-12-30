@@ -1,4 +1,4 @@
-package com.demo;
+package solved.demo;
 
 import java.io.IOException;
 import java.io.InputStream;

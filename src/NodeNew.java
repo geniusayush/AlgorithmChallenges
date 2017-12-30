@@ -1,14 +1,12 @@
-import java.util.LinkedList;
-import java.util.Queue;
+import solved.Node;
 
-public class NodeNew extends Node {
+public class NodeNew<E> extends Node<E> {
     String hash;
 
-    NodeNew left;
-    NodeNew right;
+
 
     public NodeNew(String hash, int blockNo) {
-        super(blockNo);
+        super(blockNo,);
         this.hash = hash;
 
     }
@@ -22,29 +20,7 @@ public class NodeNew extends Node {
     }
 
 
-    public NodeNew getLeft() {
-        return left;
-    }
-
-    public void setLeft(NodeNew left) {
-        this.left = left;
-    }
-
-    public NodeNew getRight() {
-        return right;
-    }
-
-    public void setRight(NodeNew right) {
-        this.right = right;
-    }
 
 
-/*
-    public Queue<Integer> getQueue() {
-        return this.queue;
-    }
 
-    public void setQueue(Queue<Integer> queue) {
-        this.queue = queue;
-    }*/
 }

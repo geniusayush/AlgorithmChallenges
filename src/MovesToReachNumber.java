@@ -9,48 +9,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class inautix {
-
-    /*
-     * Complete the function below.
-     */
-    public static void main(String[] args) {
-        long[] arr = {4, 89, 18, 56};
-        //System.out.println(getMinOperations(arr));
-        int a[] = {1234, 4321};
-        int m[] = {2345, 3214};
-        //System.out.println(minimumMoves(a, m));
-        getMovieTitles("spiderman");
-    }
-
-    static int[] getMinOperations(long[] kValues) {
-
-        int solution[] = new int[kValues.length];
-        for (int i = 0; i < kValues.length; i++) {
-            HashMap map = new HashMap<Long, Long>();
-            long num = kValues[i];
-            solution[i] = (int) calc(num, map);
-            System.out.println(solution[i]);
-        }
-        return solution;
-    }
-
-    private static long calc(long num, HashMap<Long, Long> map) {
-        if (num == 1) return 1;
-
-        if (map.containsKey(num)) return map.get(num);
-        long result = 0;
-
-        if (num > 1 && num % 2 == -0) {
-            result = calc(num / 2, map) + 1;
-
-        } else result = calc(num - 1, map) + 1;
-        map.put(num, result);
-        return result;
-
-
-    }
-
+public class MovesToReachNumber {
     static String[] findNumberOfCowsAndBulls(Map<String, String> userInput) {
         String[] ans = new String[userInput.size()];
         int v = 0;
@@ -186,5 +145,12 @@ public class inautix {
 
         Arrays.sort(response);
         return response;
+    }
+
+    public static void main(String[] args) {
+        int a[] = {1234, 4321};
+        int m[] = {2345, 3214};
+        System.out.println(minimumMoves(a, m));
+        getMovieTitles("spiderman");
     }
 }

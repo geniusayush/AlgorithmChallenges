@@ -1,29 +1,52 @@
+package solved;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-public  class Node {
+public class Node<E> {
 
     public int getBlockNo() {
-        return blockNo;
+        return index;
     }
 
     public void setBlockNo(int blockNo) {
-        this.blockNo = blockNo;
+        this.index = blockNo;
     }
 
-    public Node(int blockNo) {
+    public Node(int blockNo,Class<E> cl) {
 
-        this.blockNo = blockNo;
+        this.index = blockNo;
+
+        queue= new LinkedList<E>();
     }
 
-   private int blockNo;
-   private Queue<Node> queue = new LinkedList<Node>();
+    private int index;
+    private Node left;
+    private Node right;
+    private Queue<E> queue = new LinkedList<>();
 
-    public Queue<Node> getQueue() {
+    public Queue<E> getQueue() {
         return queue;
     }
 
-    public void setQueue(Queue<Node> queue) {
+    public void setQueue(Queue<E> queue) {
         this.queue = queue;
+    }
+
+
+    public Node getLeft() {
+        return left;
+    }
+
+    public void setLeft(Node left) {
+        this.left = left;
+    }
+
+    public Node getRight() {
+        return right;
+    }
+
+    public void setRight(Node right) {
+        this.right = right;
     }
 }

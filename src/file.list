@@ -1,7 +1,4 @@
-./com/socialtwist/assingments/assingment1/accounts/SavingsAccount.java
-./com/socialtwist/assingments/assingment1/accounts/CurrentAccount.java
-./com/socialtwist/assingments/assingment1/accounts/Account.java
-./com/socialtwist/assingments/assingment1/testers/AccountCreator.java
-./com/socialtwist/assingments/assingment1/testers/DatabaseConnector.java
-./com/socialtwist/assingments/assingment1/testers/AccountTransaction.java
-./com/socialtwist/assingments/assingment1/testers/AccountTester.java
+==getTotalCandiesEatenIfXWrappersGiveFreeYCandies
+    BACKTRACK FOR LOOP
+==solved.MultiplesofGivenNumber
+use custom hashmap when we have index which needs to be the hashvalue

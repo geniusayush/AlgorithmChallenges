@@ -1,3 +1,5 @@
+package solved;
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -5,8 +7,11 @@ import java.util.Scanner;
 
 /**
  * Created by ayush on 24/06/17.
+ *
+ *
+ *
  */
-public class Bookbundle {
+public class MaximizeBookBundleMinCost {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
         int res;

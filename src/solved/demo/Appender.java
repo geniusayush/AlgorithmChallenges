@@ -1,4 +1,4 @@
-package com.demo;
+package solved.demo;
 
 import java.sql.Timestamp;
 import java.util.HashSet;

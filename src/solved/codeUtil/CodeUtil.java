@@ -7,7 +7,7 @@
  * entered into with SocialTwist.
  *
  */
-package codeUtil;
+package solved.codeUtil;
 
 //import org.apache.log4j.Logger;
 /**

@@ -1,4 +1,4 @@
-package com.demo;
+package solved.demo;
 
 /**
  * Created by ayush on 16/02/17.

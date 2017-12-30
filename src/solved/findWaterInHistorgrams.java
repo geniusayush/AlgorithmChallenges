@@ -1,4 +1,4 @@
-/*
+package solved;/*
 5, 17, 3, 25, 0, 5, 2
 
 0, 2, 3, 5, 5, 17, 25
@@ -20,7 +20,7 @@
 import java.util.ArrayList;
 
 // 5 17
-public class BankBazaar {
+public class findWaterInHistorgrams {
 
 
     /*
@@ -38,29 +38,7 @@ public class BankBazaar {
     }
 
     */
-    public static void newFunction() {
-        int n = 10;
-        int[] arr = {5, 17, 3, 25, 0, 5, 2};
-        ArrayList<Integer>[] matrix = new ArrayList[n];
-        for (int i = 0; i < n; i++) {
-            matrix[i] = new ArrayList<>();
-        }
-        for (int i = 0; i < arr.length; i++) {
-            int key = arr[i] % n;
-            matrix[key].add(arr[i]);
-        }
-        int count=0;
-        for (int i = 0; i <= matrix.length/2; i++) {
-            if (i == 0 ||n==i*2){
 
-                count+=matrix[i].size()*(matrix[i].size()-1)/2;
-            }
-            else{
-                count+=matrix[n-i].size();
-            }
-        }
-        System.out.println(count);
-    }
     static int findWater()
     {
          int arr[] = {3, 0, 0, 2, 0, 4};
@@ -85,7 +63,6 @@ public class BankBazaar {
         return water;
     }
     public static void main(String args[]){
-        newFunction();
         System.out.println(findWater());
     }
 }

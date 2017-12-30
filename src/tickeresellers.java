@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 /**
  * Created by ayush on 24/06/17.
+ * case of reedy approach where as the number f ticket sold are lesser the prce goes dowmn
+ * we need tp sell max tickets
+ * here there are n sellers where each has some tickets
+ *
  */
 public class tickeresellers {
     public static void main(String[] args) throws IOException {

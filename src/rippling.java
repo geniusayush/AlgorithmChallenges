@@ -1,7 +1,7 @@
 
 class rippling {
     public static void main(String args[]) {
-        int[] a = {2,1,5,6,7};
+        int[] a = {2,1,4,6,7};
         int amount =11;
         int matrix[][] = new int[amount+1][a.length];
         for(int i=0;i<=amount;i++){

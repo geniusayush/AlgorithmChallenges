@@ -1,10 +1,12 @@
+package solved;
+
 import java.io.IOException;
 import java.util.Scanner;
 
 /**
  * Created by ayush on 24/06/17.
  */
-public class OddDivSum {
+public class SumOfOddFactors {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
 
