@@ -5,47 +5,9 @@ import java.util.Scanner;
 
 
 public class Demo {
-    private static class Node {
-        Node parent;
 
-        public Node getParent() {
-            return parent;
-        }
 
-        public void setParent(Node parent) {
-            this.parent = parent;
-        }
 
-        public int getValue() {
-            return value;
-        }
-
-        public void setValue(int value) {
-            this.value = value;
-        }
-
-        public ArrayList<Node> getChildren() {
-            return children;
-        }
-
-        public void setChildren(Node children) {
-            this.children.add(children);
-        }
-
-        public Node(int value) {
-
-            this.value = value;
-            this.children = new ArrayList<Node>();
-        }
-
-        int value;
-        ArrayList<Node> children;
-
-    }
-
-    public static void main(String[] args) {
-
-    }
     static int[] getPreOrder(int[] arr) {
         ArrayList<Integer> list= new ArrayList<Integer>();
         int a=0;int b=arr.length;
@@ -86,15 +48,15 @@ public class Demo {
         return minValue;
     }
 
-    public static void fuckoff(String args[]) throws Exception {
+    public static void main(String args[]) throws Exception {
         Scanner scan = new Scanner(System.in);
         int cases = scan.nextInt();
         for (int x = 0; x < cases; x++) {
             int n = scan.nextInt();
             int q = scan.nextInt();
-            Node[] arr = new Node[n + 1];
+            HeapNode[] arr = new HeapNode[n + 1];
             for (int j = 0; j < n; j++) {
-                arr[j + 1] = new Node(scan.nextInt());
+                arr[j + 1] = new HeapNode(scan.nextInt());
             }
             for (int j = 0; j < n - 1; j++) {
                 int a = scan.nextInt();
@@ -105,13 +67,13 @@ public class Demo {
             for (int j = 0; j < q; j++) {
                 int u = scan.nextInt();
                 int i = scan.nextInt();
-                HashSet<Node> set = new HashSet<>();
-                HashSet<Node> set2 = new HashSet<>();
+                HashSet<HeapNode> set = new HashSet<>();
+                HashSet<HeapNode> set2 = new HashSet<>();
                 set2.add(arr[u]);
                 printKDistant(arr[1], i - 1, set).retainAll(decendents(arr[u], set2));
 
                 int sum = 0;
-                for (Node Nodes : set) {
+                for (HeapNode Nodes : set) {
                     sum += Nodes.getValue();
                 }
                 System.out.println(sum);
@@ -120,14 +82,14 @@ public class Demo {
         }
     }
 
-    static HashSet<Node> printKDistant(Node Nodes, int k, HashSet<Node> set) {
+    static HashSet<HeapNode> printKDistant(HeapNode Nodes, int k, HashSet<HeapNode> set) {
         if(Nodes==null ||k<0)
         return set;
         if (k == 0) {
             set.add(Nodes);
             return set;
         } else {
-            for (Node n : Nodes.getChildren()) {
+            for (HeapNode n : Nodes.getChildren()) {
                 printKDistant(n, k - 1, set);
 
             }
@@ -135,10 +97,10 @@ public class Demo {
         }
     }
 
-    static HashSet<Node> decendents(Node Nodes, HashSet<Node> set) {
+    static HashSet<HeapNode> decendents(HeapNode Nodes, HashSet<HeapNode> set) {
         if(Nodes==null )
             return set;
-        for (Node n : Nodes.getChildren()) {
+        for (HeapNode n : Nodes.getChildren()) {
             set.add(n);
             decendents(n, set);
         }

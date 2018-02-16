@@ -14,7 +14,7 @@ public class algorythma2 {
         int[] arr = new int[n];
 
         for (int t = 0; t < n; t++) {
-            Node node = new Node(sc.nextInt());
+            Node node = new Node(sc.nextInt(),Integer.class);
             // set node value to
             map.put(t + 1, node);
         }
@@ -33,8 +33,8 @@ public class algorythma2 {
             Node curr= queue.poll();
             if(curr.getBlockNo()==0) {yes=false;continue;}
             else{
-                for(Node next:curr.getQueue()){
-                    queue.add(next);
+                for(Object next:curr.getQueue()){
+                    queue.add((Node)next);
                 }
             }
             }

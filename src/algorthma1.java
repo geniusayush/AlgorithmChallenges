@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class algorthma1 {
-
+/*
 
     public static void main(String args[]) throws Exception {
         Scanner sc = new Scanner(System.in);
@@ -25,5 +25,5 @@ public class algorthma1 {
             int count = bst.searchMain(l - 1, r - 1, x + "");
             System.out.println(count);
         }
-    }
+    }*/
 }

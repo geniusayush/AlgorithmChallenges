@@ -1,3 +1,5 @@
+package solved.greedy;
+
 import java.io.IOException;
 import java.util.Comparator;
 import java.util.PriorityQueue;

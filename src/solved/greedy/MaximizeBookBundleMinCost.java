@@ -1,4 +1,4 @@
-package solved;
+package solved.greedy;
 
 import java.io.IOException;
 import java.util.Arrays;

@@ -1,6 +1,10 @@
 import solved.Node;
 
 public class NodeNew<E> extends Node<E> {
+    public NodeNew(int blockNo, Class<E> cl) {
+        super(blockNo, cl);
+    }
+    /*
     String hash;
 
 
@@ -17,10 +21,12 @@ public class NodeNew<E> extends Node<E> {
 
     public void setHash(String hash) {
         this.hash = hash;
-    }
 
-
-
-
-
+    */
 }
+
+
+
+
+
+

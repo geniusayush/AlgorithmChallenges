@@ -1,4 +1,5 @@
 public class BST {
+    /*
     public NodeNew getNode() {
         return root;
     }
@@ -65,5 +66,5 @@ public class BST {
                 return false;
             }
         }
-    }
+    }*/
 }

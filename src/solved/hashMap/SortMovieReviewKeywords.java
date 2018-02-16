@@ -1,7 +1,10 @@
+package solved.hashMap;
+
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
-public class h {
+public class SortMovieReviewKeywords {
 
 
 
@@ -12,6 +15,9 @@ public class h {
         String[] words  = scan.nextLine().split(" ");
         int testcases = scan.nextInt();
         HashMap<Integer,HashMap<String,Integer>> map=new HashMap<>();
+        for(int a:map.keySet()){}
+        HashSet<HashSet<Integer>> loda =new HashSet<HashSet<Integer>>();
+        for(HashSet<Integer> a:loda){HashSet<Integer> b= ((HashSet<Integer>) a.clone());}
         for (int i = 0; i < testcases; i++) {
             int id = scan.nextInt();
             HashMap<String, Integer> m = map.get(id);
@@ -26,7 +32,7 @@ public class h {
         }
         for (int g:map.keySet()){
             HashMap<String, Integer> m = map.get(g);
-            
+            // get the keywords
         }
         }
 }

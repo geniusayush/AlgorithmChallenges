@@ -1,33 +1,20 @@
-// you can also use imports, for example:
+package solved;// you can also use imports, for example:
 // import java.util.*;
-
-import java.util.ArrayList;
-import java.util.Queue;
-import java.util.Stack;
 
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 /*
 * */
-public class numberASwap {
-    public static  int solution(int A) {
-        char[] array=(A+"").toCharArray();
-        int num=0;
-        int power=0;
+public class PathInAMatrix {
 
-        for(int i=0;i<array.length/2;i++){
-            num=(num*10)+array[i]-48;
-            num= (num*10)+array[array.length-1-i]-48;
-        }
-        if(array.length%2!=0){
-            num+=(num*10)+array[array.length/2]-48;
-        }
-        return num;}
 
     public static void main(String[] args) {
-        //solution(130);
-        int arr[][]={{7, -2, 0, 4, 2}, {-1, 0, 1, 3, 1}, {1, 2, 1, -1, 2}, {4, 0, 0, -3, 0}};
-        solution2(arr);
+
+        int arr[][]={{7, -2, 0, 4, 2},
+                     {-1, 0, 1, 3, 1},
+                     {1, 2, 1, -1, 2},
+                     {4, 0, 0, -3, 0}};
+        System.out.println(solution2(arr));
     }
     // you can also use imports, for example:
 // import java.util.*;
