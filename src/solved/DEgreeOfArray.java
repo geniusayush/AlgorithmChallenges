@@ -1,6 +1,7 @@
 package solved;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class DEgreeOfArray {
     static int degreeOfArray(int[] arr) {
@@ -19,11 +20,18 @@ public class DEgreeOfArray {
         }
         int maxNum = 0;
         int minNum = Integer.MAX_VALUE;
+
         for (int num : map.keySet()) {
             data d = map.get(num);
-            if (d.getCount() >= maxNum && (d.getMax() - d.getMin() + 1) < minNum) {
-                minNum = d.getMax() - d.getMin() + 1;
+            if (d.getCount() >= maxNum ) {
                 maxNum = d.getCount();
+            }
+        }
+
+        for (int num : map.keySet()) {
+            data d = map.get(num);
+            if (d.getCount() == maxNum && (d.getMax() - d.getMin() + 1) < minNum) {
+                minNum = d.getMax() - d.getMin() + 1;
             }
         }
         return minNum;
@@ -66,8 +74,8 @@ public class DEgreeOfArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {5, 1, 2, 2, 3, 1};
-          degreeOfArray(arr);
+        int[] arr = {5, 1, 2, 3,6,5,4,98,7,63,455,2,63,156,565};
+        System.out.println(degreeOfArray(arr));
 
     }
 

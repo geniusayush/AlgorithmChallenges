@@ -3,7 +3,7 @@ import java.util.*;
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
-class Solution {
+class Solutionq {
     public static int solution2(String S) {
 
         // basic idea get ll the substring and check if they are vaild ie have one upper case and no numbers

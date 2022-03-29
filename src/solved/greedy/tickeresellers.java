@@ -10,7 +10,6 @@ import java.util.Scanner;
  * case of reedy approach where as the number f ticket sold are lesser the prce goes dowmn
  * we need tp sell max tickets
  * here there are n sellers where each has some tickets
- *
  */
 public class tickeresellers {
     public static void main(String[] args) throws IOException {
@@ -37,12 +36,7 @@ public class tickeresellers {
 
     static long maximumAmount(int[] a, long numElements) {
 
-        PriorityQueue<Long> prq = new PriorityQueue<>(new Comparator() {
-            @Override
-            public int compare(Object o1, Object o2) {
-                return ((Long) o2).compareTo((Long) o1);
-            }
-        });
+        PriorityQueue<Long> prq = new PriorityQueue<Long>((Comparator) (o1, o2) -> ((Long) o2).compareTo((Long) o1));
 
         for (int i = 0; i < a.length; i++) {
             prq.add((long) a[i]);

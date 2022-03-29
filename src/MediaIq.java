@@ -25,6 +25,7 @@ class mediaiq {
         else if(one.end>two.end)return one;
         else return new Interval(one.start, two.end);
 
+
 }
 
     public Stack<Interval> merge(Interval[] arr) {

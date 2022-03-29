@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
-class TestClass {
+class BobMatrix {
     public static void main2(String args[]) throws Exception {
 
         //Scanner

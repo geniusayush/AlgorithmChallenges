@@ -1,6 +1,6 @@
 package solved;
 
-import com.google.gson.Gson;
+
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -53,9 +53,9 @@ public class JSONDemo {
         int total;
         int total_pages;
         Movie[] data;
-    }
+    }}
 
-    static String[] getMovieTitles(String substr) {
+    /*static String[] getMovieTitles(String substr) {
         Gson g = new Gson();
 
 
@@ -77,6 +77,6 @@ public class JSONDemo {
 
         Arrays.sort(response);
         return response;
-    }
+    }*/
 
-}
+

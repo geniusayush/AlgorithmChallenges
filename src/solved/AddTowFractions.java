@@ -2,9 +2,11 @@ package solved;
 
 import java.io.IOException;
 import java.util.Scanner;
+
 /***
-this class is aboutt computing  a  addition of two fractions
- */public class AddTowFractions {
+ this class is aboutt computing  a  addition of two fractions
+ */
+public class AddTowFractions {
     public static String[] fractionSum(String arr[]) {
         String res[] = new String[arr.length];
 
@@ -18,14 +20,14 @@ this class is aboutt computing  a  addition of two fractions
             long b2 = Long.parseLong(b.split("\\/")[1]);
             long an1 = (a1 * b2 + a2 * b1);
             long an2 = (a2 * b2);
-            long gcm = gcm(an1, an2);
+            long gcm = gcf(an1, an2);
             res[i] = ((an1 / gcm) + "/" + (an2 / gcm));
         }
         return res;
     }
 
-    public static long gcm(long a, long b) {
-        return b == 0 ? a : gcm(b, a % b); // Not bad for one line of code :)
+    public static long gcf(long a, long b) {
+        return b == 0 ? a : gcf(b, a % b); // Not bad for one line of code :)
     }
 
     public static void main(String[] args) throws IOException {

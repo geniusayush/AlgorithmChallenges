@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * Created by ayush on 24/06/17.
- *
+ *In this case on mon max problem if we can take partial enteties then iuts greedy else it is  DP
  *
  *
  */
