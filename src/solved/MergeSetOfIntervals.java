@@ -1,3 +1,5 @@
+package solved;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Stack;
@@ -11,14 +13,15 @@ import java.util.Stack;
         1 compare with all of they can be merged merew them
 // sort them on basis on therir start times
 */
-class Interval {
-    int start; int end;
 
-    public Interval(Integer start, Integer end) {
-    }
-}// we can set it ourselves or assume it to be provided
+public class MergeSetOfIntervals {
+    class Interval {
+        int start; int end;
 
-class mediaiq {
+        public Interval(Integer start, Integer end) {
+        }
+    }// we can set it ourselves or assume it to be provided
+
     public Interval merge(Interval one, Interval two) {
 
         if(two.start>one.end)return two;

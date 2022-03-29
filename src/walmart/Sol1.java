@@ -83,7 +83,7 @@ class Solution {
 
     public static void main(String[] args) throws IOException {
 
-        String sentence = "Here i come.";
+        String sentence = "he is bad man";
         String res = arrange(sentence);
         System.out.println(res);
     }

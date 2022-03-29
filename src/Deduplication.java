@@ -3,7 +3,6 @@
    * Please do NOT rename this class.
 */
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 import java.io.*;
 import java.security.MessageDigest;
